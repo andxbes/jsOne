@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>RedBlocks</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            div{
+                position: relative;
+                float: left;
+                width: 100px;
+                height: 100px;
+                border:1px solid black;
+
+            }
+        </style>
+
+    </head>
+    <!--r>sqrt(g^2+b^2)-->
+
+    <body onload="redbs.addButton()">
+        <script type="text/javascript">
+            var colors = ["red", "cyan", "black", "blue", "chartreuse", "aqua"];
+            var bloks = 50;
+            for (var i = 0; i < bloks; i++) {
+                var div = document.createElement("div");
+                div.style.background = colors[getRandomInt(0, colors.length)];
+                window.document.body.appendChild(div);
+
+            }
+
+
+            
+            function getRandomInt(min, max)
+            {
+                return Math.floor(Math.random() * (max - min + 1)) + min;
+            }
+
+
+        </script>
+        
+        
+       
+
+
+        <script  type="text/javascript" src="js/newjavascript.js"></script>
+
+    </body>
+</html>
